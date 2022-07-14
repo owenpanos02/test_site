@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
     <title>LOL Ranked Stat Viewer</title>
-    <div class = "header-image">
-    </div>
 </head>
 <body>
-   <h1>Ranked Solo / Duo Stat Viewer</h1>
+   <div class="header">
+     <h1>Ranked Solo / Duo Stat Viewer</h1>
+     <img src= "https://i.ibb.co/mNbbBL3/owen-gg.png" class="headerlogo">
+   </div>
    <form style= "text-align: center; " class= "output" method = 'POST'>
         <label for="sumname">Enter Summoner Name</label><br>
         <input type="text" id="sumname" name="summonerName" placeholder="Summoner Name"><br>
    </form>
    <h2>{{ value }}</h2>
-   <div class = "image">
-        <img style="vertical-align: bottom" src="https://i.ibb.co/t3qpTKn/web-logo.png" width="600" height="600">
 
-   </div>
 </body>
 </html>
+
